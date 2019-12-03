@@ -26,7 +26,7 @@ os.system("sudo brctl addif "+br_new+" v"+str(v1))
 print("2")
 # ip
 ip1=random.randrange(2, 250, 1)
-os.system("sudo nsenter -t "+cont1id+" -n ip addr add 11.1.0."+str(ip1)+"/24 dev v"+str(v2))
+os.system("sudo nsenter -t "+cont1id+" -n ip addr add 14.1.0."+str(ip1)+"/24 dev v"+str(v2))
 print("4")
 #route
 os.system("sudo nsenter -t "+cont1id+" -n ip route del default via 172.17.0.1 dev eth0")
@@ -50,7 +50,7 @@ os.system("sudo brctl addif "+br_new+" v"+str(v1))
 print("2")
 # ip
 ip1=random.randrange(2, 250, 1)
-os.system("sudo nsenter -t "+cont2id+" -n ip addr add 11.1.0."+str(ip1)+"/24 dev v"+str(v2))
+os.system("sudo nsenter -t "+cont2id+" -n ip addr add 14.1.0."+str(ip1)+"/24 dev v"+str(v2))
 print("4")
 #route
 os.system("sudo nsenter -t "+cont2id+" -n ip route del default via 172.17.0.1 dev eth0")
