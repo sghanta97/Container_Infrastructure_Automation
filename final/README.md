@@ -6,5 +6,5 @@ CS7,CS8,L3
 CS8,CS9,GRE  
 First the user should run the setup script, It will create the basic topology.  
 python intialsetup.py  
-Then the container_deploy script can be run to create the required topology.  
-python container_deploy.py  
+Then the tunnel_configure script can be run to create the required tunneling.  
+python tunnel_configure.py  
